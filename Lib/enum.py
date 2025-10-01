@@ -1287,7 +1287,7 @@ class Enum(metaclass=EnumType):
                 elif name not in self._member_map_:
                     interesting.add(name)
         names = sorted(
-                set(['__class__', '__doc__', '__eq__', '__hash__', '__module__'])
+                set(['__class__', '__doc__', '__eq__', '__hash__', '__module__', '_add_alias_', '_add_value_alias_'])
                 | interesting
                 )
         return names
