@@ -5511,7 +5511,7 @@ def enum_dir(cls):
 
 def member_dir(member):
     if member.__class__._member_type_ is object:
-        allowed = set(['__class__', '__doc__', '__eq__', '__hash__', '__module__', 'name', 'value'])
+        allowed = set(['__class__', '__doc__', '__eq__', '__hash__', '__module__', 'name', 'value', '_add_alias_', '_add_value_alias_'])
     else:
         allowed = set(dir(member))
     for cls in member.__class__.mro():
