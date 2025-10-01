@@ -312,7 +312,7 @@ Data Types
 
    .. method:: Enum.__dir__(self)
 
-      Returns ``['__class__', '__doc__', '__module__', 'name', 'value']`` and
+      Returns ``['__class__', '__doc__', '__module__', '_add_alias_', '_add_value_alias_', 'name', 'value']`` and
       any public methods defined on *self.__class__*::
 
          >>> from datetime import date
