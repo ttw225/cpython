@@ -129,7 +129,7 @@ def show_flag_values(value):
 def bin(num, max_bits=None):
     """
     Like built-in bin(), except negative values are represented in
-    twos-compliment, and the leading bit always indicates sign
+    twos-complement, and the leading bit always indicates sign
     (0=positive, 1=negative).
 
     >>> bin(10)
@@ -340,7 +340,7 @@ class EnumDict(dict):
 
     def __setitem__(self, key, value):
         """
-        Changes anything not dundered or not a descriptor.
+        Changes anything not dunder or not a descriptor.
 
         If an enum member name is used twice, an error is raised; duplicate
         values are not checked for.
